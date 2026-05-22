@@ -1,0 +1,21 @@
+
+fileType: momentic/test
+id: a3113951-9f6b-4ef7-919a-741e8ae4de01
+name: logic-login
+baseUrl: https://printerval.com
+description: test login
+parameters:
+  - name: USERNAME
+    default:
+      string: test@example.com
+  - name: PASSWORD
+    default:
+      string: password123
+steps:
+  - type:
+      text: "{{ env.USERNAME }}"
+      into: Username input
+  - type:
+      text: "{{ env.PASSWORD }}"
+      into: Password input
+  - click: Log in

@@ -1,0 +1,26 @@
+fileType: momentic/test
+id: 1f2504e2-0cd8-45a0-a267-9d8bb04603a5
+name: logintesst
+baseUrl: https://printerval.com
+description: test login
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1280
+    height: 800
+  browserType: Chromium
+parameters:
+  - name: USERNAME
+    default:
+      string: test@example.com
+  - name: PASSWORD
+    default:
+      string: password123
+steps:
+  - type:
+      text: "{{ env.USERNAME }}"
+      into: Username input
+  - type:
+      text: "{{ env.PASSWORD }}"
+      into: Password input
+  - click: Log in

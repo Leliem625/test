@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "momentic": "^2.115.0"
+  }
+}

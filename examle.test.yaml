@@ -1,0 +1,45 @@
+fileType: momentic/test
+id: 272dd561-f328-4519-b9f4-5b35a786127a
+name: examle
+baseUrl: https://practicetestautomation.com/practice-test-login/
+description: tesst login
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1920
+    height: 1080
+  browserType: Chromium
+steps:
+  - id: d272db2a-f4d2-41ef-a1fa-fd57efeaf247
+    type: PRESET_ACTION
+    command:
+      id: 818be237-6bf3-41c2-a21e-e6beefc60a1e
+      type: TYPE
+      target:
+        type: description
+        elementDescriptor: the username input
+      value: student
+  - id: 4bb60326-3975-4198-a83f-00d585cd10e0
+    type: PRESET_ACTION
+    command:
+      id: e79079e4-39d3-4c02-add7-0ee1e57df332
+      type: TYPE
+      target:
+        type: description
+        elementDescriptor: the password input
+      value: Password123
+  - id: 09bd9c3d-1e86-486c-908d-49524964c5d0
+    type: PRESET_ACTION
+    command:
+      id: 0e4e0a80-7b6e-48f9-bff3-d09caf806291
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: the submit button
+  - id: 54ab70eb-c5f0-48db-8f28-479485081e55
+    type: PRESET_ACTION
+    command:
+      id: b571639b-af1c-4bdc-b2c9-a2028282918b
+      type: AI_ASSERTION
+      assertion: assert that we are logged in successfully!
+      disableCache: true
