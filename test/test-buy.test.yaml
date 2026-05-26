@@ -1,0 +1,44 @@
+fileType: momentic/test
+id: 7426a4cd-8153-4aee-a46c-b73ce2491b95
+name: test-buy
+baseUrl: https://printerval.com
+description: mua hang
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1920
+    height: 1080
+  browserType: Chromium
+steps:
+  - id: 9768e203-0ec4-45d0-85a1-fb0f79ea589a
+    type: PRESET_ACTION
+    command:
+      id: 7b1c60e5-6539-46cb-b3e0-91fc75f6d61f
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: the For Dad button
+  - id: 8a2b478e-5602-4283-95ca-6e5a1922bcc6
+    type: PRESET_ACTION
+    command:
+      id: 10196988-7b04-4d21-940b-220ed48706eb
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: chose 1 sản phẩm bất kỳ button
+  - id: b0445ca6-fe5b-471c-9922-2c2e7de0dee6
+    type: PRESET_ACTION
+    command:
+      id: f549cc7f-8055-4bb6-a940-958156874140
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: the Quick Add buttun
+  - id: fc861142-2a2d-4d60-bcec-f73a2aec6204
+    type: PRESET_ACTION
+    command:
+      id: 59954bc7-9613-43af-9901-626a81a4beb8
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: chọn size S ở Choose a size button

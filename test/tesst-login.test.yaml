@@ -1,0 +1,60 @@
+fileType: momentic/test
+id: b654885d-b189-418f-b0c5-83487145fea1
+name: tesst_login
+baseUrl: https://printerval.com
+description: login test
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1920
+    height: 1080
+  browserType: Chromium
+steps:
+  - id: d88b4b66-232b-46ee-8f56-b3fd7785c893
+    type: PRESET_ACTION
+    command:
+      id: fb9deff4-c621-4dfd-8272-6faa4e1c73f4
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: the Login button
+  - id: d4044416-3ad2-4589-97be-d7d2e7346ff1
+    type: PRESET_ACTION
+    command:
+      id: 181c9f15-3a97-4570-a450-a579f2287dda
+      type: TYPE
+      target:
+        type: description
+        elementDescriptor: the your email address intput
+      value: leliem06x@gmail.com
+  - id: fc724174-48e8-467d-933d-114849a314a5
+    type: PRESET_ACTION
+    command:
+      id: eeae5825-4f62-4067-978e-aefffe2388b7
+      type: TYPE
+      target:
+        type: description
+        elementDescriptor: the password input
+      value: Leliem625
+  - id: 18a5a8d3-3fc4-41aa-8f7d-34fdddc24acf
+    type: PRESET_ACTION
+    command:
+      id: d2d2ee55-2492-47ab-8078-c8160aeac2dc
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: the stay signed in click
+  - id: d8fe8201-4615-4470-9cad-8b1653486f3b
+    type: PRESET_ACTION
+    command:
+      id: e9d91689-b1e4-439c-bfc2-17eebed7ca82
+      type: CLICK
+      target:
+        type: description
+        elementDescriptor: the Log in button
+  - id: fbc049ff-62c8-428f-8db9-2c509ea29373
+    type: PRESET_ACTION
+    command:
+      id: ce7b127c-5561-48bb-b5be-e1eae2f4e890
+      type: AI_ASSERTION
+      assertion: check logged in successfully!

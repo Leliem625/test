@@ -35,7 +35,7 @@ steps:
       target:
         type: description
         elementDescriptor: the password input
-      value: Leliem625
+      value: Leliem62
   - id: 0ca2e6eb-66f6-4527-a271-74177579b321
     type: PRESET_ACTION
     command:
