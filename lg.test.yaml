@@ -1,0 +1,21 @@
+fileType: momentic/test
+id: 1a9e970d-7891-431a-8907-7d3ebd64ef5d
+name: lg
+baseUrl: https://printerval.com
+description: lg
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1920
+    height: 1080
+  browserType: Chromium
+steps:
+  - id: 18b33afc-dae2-448c-b699-98f97f9151e7
+    type: AI_ACTION_DYNAMIC
+    text: |+
+      step1: click the login button
+      step2: nhập email là leliem06x@gmail.com
+      step3: nhập password là Leliem625
+      step4: kiểm tra xem đăng nhaapj thành công không
+
+    version: "3"
