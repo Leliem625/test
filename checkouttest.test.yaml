@@ -1,0 +1,26 @@
+fileType: momentic/test
+id: eb270d76-dd74-475a-bcbd-6d178bf7504e
+name: checkouttest
+baseUrl: https://printerval.com
+description: testcheckout
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1920
+    height: 1080
+  browserType: Chromium
+steps:
+  - id: e045afc2-2444-446a-983a-ae960af9748a
+    type: AI_ACTION_DYNAMIC
+    text: Search for "cat tshirt", open the first product, add it to cart, proceed
+      to checkout, if any popup (especially newsletter or marketing popup)
+      appears close it if it blocks interaction, add "?mode=test" to the
+      checkout URL and ensure checkout page is still visible, enter email
+      "kimchinguyen0310@gmail.com", fill all remaining required fields manually
+      and add order note "Ky thuat test", select Visa payment method, enter card
+      details (card number "4242 4242 4242 4242", expiry "02/29", CVV "242"),
+      complete the payment, verify that an order success page is displayed with
+      no errors or broken UI, retry once if any click action fails, and after
+      completion or failure send a summary report email to
+      "kimchinguyen0310@gmail.com".
+    version: "3"

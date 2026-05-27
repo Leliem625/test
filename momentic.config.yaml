@@ -1,0 +1,15 @@
+name: app
+include:
+  - "**/*.test.yaml"
+  - "**/*.module.yaml"
+gitMainBranch: main
+ai:
+  useMemory: true
+  failureRecovery: true
+  agentConfig:
+    locator: v3
+    assertion: v3
+    visual-assertion: v3
+    text-extraction: v3
+    failure-classification: v1
+    failure-recovery: v2

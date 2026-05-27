@@ -1,0 +1,21 @@
+fileType: momentic/test
+id: 066bb6f2-07f2-49ab-8088-c07142f51e87
+name: customer-can-buy-a-t-shirt-successfully
+baseUrl: https://printerval.com
+description: CHECKOUT001
+schemaVersion: 1.0.24
+advanced:
+  viewport:
+    width: 1920
+    height: 1080
+  browserType: Chromium
+steps:
+  - id: 0f517698-0c6a-4241-8eef-5cdd1d831198
+    type: AI_ACTION_DYNAMIC
+    text: |
+      Search for "cat tshirt"
+    version: "3"
+  - id: 34df413e-cdf1-46b9-9600-9b988139849e
+    type: AI_ACTION_DYNAMIC
+    text: open the first product and can open the new browser
+    version: "3"
